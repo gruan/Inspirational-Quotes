@@ -59,6 +59,6 @@ georgeInspirationalQuotes.controller('mainController', ['$scope', '$http', '$int
   };
 
   // Get a random quote every timeDelay ms.
-  var timeDelay = 5000;
+  var timeDelay = 3000;
   $interval($scope.getAnotherRandomQuote, timeDelay, 0);
 }])
