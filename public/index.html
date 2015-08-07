@@ -1,0 +1,55 @@
+<!-- index.html -->
+<!doctype html>
+
+<html ng-app="georgeInspirationalQuotes">
+<head>
+  <!-- META -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+  <title>Inspirational Quotes</title>
+  <!-- SCROLLS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"> <!-- load bootstrap -->
+  <style>
+    html { overflow-y:scroll; }
+    body { padding-top:50px; }
+    #quote-list { margin-bottom:30px; }
+  </style>
+
+  <!-- SPELLS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><!-- load jquery -->
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+  <script src="core.js"></script>
+
+</head>
+
+<body ng-controller="mainController">
+  <div class="container">
+    <!-- TITLE -->
+    <div class="jumbotron text-center">
+      <h1>Inspirational Quotes</h1>
+    </div>
+
+    <!-- QUOTES -->
+    <div id="quote-list" class="row">
+      <div class="col-sm-12 text-center">
+        <h2>{{quoteDisplay.text}} <button type="button" class="btn btn-danger" ng-click="deleteQuote(quoteDisplay._id)">Delete</button></h2>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" ng-click="getAnotherRandomQuote()">Another Quote</button>
+
+    <!-- FORM TO CREATE QUOTES -->
+    <div id="quote-form" class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control input-lg text-center" placeholder="An inspirational quote..." ng-model="formData.text">
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" ng-click="createQuote()">Add</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>

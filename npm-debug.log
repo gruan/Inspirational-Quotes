@@ -1,0 +1,286 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'service', '-g' ]
+2 info using npm@2.11.1
+3 info using node@v0.12.4
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /usr/local/lib/package.json
+6 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+7 silly cache add args [ 'service', null ]
+8 verbose cache add spec service
+9 silly cache add parsed spec { raw: 'service',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'service',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed service@*
+11 verbose addNamed "*" is a valid semver range for service
+12 silly addNameRange { name: 'service', range: '*', hasData: false }
+13 silly mapToRegistry name service
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/service
+17 verbose addNameRange registry:https://registry.npmjs.org/service not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/service
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 11:01:59
+21 verbose request id b3dc02e2a22c5f59
+22 http request GET https://registry.npmjs.org/service
+23 http 200 https://registry.npmjs.org/service
+24 silly get cb [ 200,
+24 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly get     etag: '"7GU3FUGTDY4500OC6R8D96OB9"',
+24 silly get     'content-type': 'application/json',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     'content-length': '3355',
+24 silly get     'accept-ranges': 'bytes',
+24 silly get     date: 'Fri, 07 Aug 2015 15:01:58 GMT',
+24 silly get     via: '1.1 varnish',
+24 silly get     age: '0',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-served-by': 'cache-iad2134-IAD',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1438959718.339654,VS0,VE356',
+24 silly get     vary: 'Accept' } ]
+25 verbose get saving service to /Users/georgeruan/.npm/registry.npmjs.org/service/.cache.json
+26 silly addNameRange number 2 { name: 'service', range: '*', hasData: true }
+27 silly addNameRange versions [ 'service', [ '0.1.0', '0.1.1', '0.1.2', '0.1.3', '0.1.4' ] ]
+28 silly addNamed service@0.1.4
+29 verbose addNamed "0.1.4" is a plain semver version for service
+30 silly mapToRegistry name service
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npmjs.org/
+33 silly mapToRegistry uri https://registry.npmjs.org/service
+34 verbose addRemoteTarball https://registry.npmjs.org/service/-/service-0.1.4.tgz not in flight; adding
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/service/-/service-0.1.4.tgz',
+35 verbose addRemoteTarball   'd0ab9ffbc2b9d5875af8b01dec36339784525b44' ]
+36 info retry fetch attempt 1 at 11:01:59
+37 info attempt registry request try #1 at 11:01:59
+38 http fetch GET https://registry.npmjs.org/service/-/service-0.1.4.tgz
+39 http fetch 200 https://registry.npmjs.org/service/-/service-0.1.4.tgz
+40 silly fetchAndShaCheck shasum d0ab9ffbc2b9d5875af8b01dec36339784525b44
+41 verbose addTmpTarball /var/folders/0j/bz2h8sr51tx8v7w34dynz4s40000gn/T/npm-3890-2192594a/registry.npmjs.org/service/-/service-0.1.4.tgz not in flight; adding
+42 verbose addTmpTarball already have metadata; skipping unpack for service@0.1.4
+43 silly cache afterAdd service@0.1.4
+44 verbose afterAdd /Users/georgeruan/.npm/service/0.1.4/package/package.json not in flight; writing
+45 verbose afterAdd /Users/georgeruan/.npm/service/0.1.4/package/package.json written
+46 silly install resolved [ { name: 'service',
+46 silly install resolved     version: '0.1.4',
+46 silly install resolved     description: 'Make init.d scripts for node apps',
+46 silly install resolved     homepage: 'https://github.com/iamcal/service.js',
+46 silly install resolved     main: './service',
+46 silly install resolved     repository: { type: 'git', url: 'git://github.com/iamcal/service.js.git' },
+46 silly install resolved     dependencies: { daemon: '>=0.3.0' },
+46 silly install resolved     _id: 'service@0.1.4',
+46 silly install resolved     engines: { node: '*' },
+46 silly install resolved     _engineSupported: true,
+46 silly install resolved     _npmVersion: '0.3.18',
+46 silly install resolved     _nodeVersion: 'v0.4.3',
+46 silly install resolved     directories: {},
+46 silly install resolved     files: [ '' ],
+46 silly install resolved     _defaultsLoaded: true,
+46 silly install resolved     dist:
+46 silly install resolved      { shasum: 'd0ab9ffbc2b9d5875af8b01dec36339784525b44',
+46 silly install resolved        tarball: 'http://registry.npmjs.org/service/-/service-0.1.4.tgz' },
+46 silly install resolved     _shasum: 'd0ab9ffbc2b9d5875af8b01dec36339784525b44',
+46 silly install resolved     _resolved: 'https://registry.npmjs.org/service/-/service-0.1.4.tgz',
+46 silly install resolved     _from: 'service@*' } ]
+47 info install service@0.1.4 into /usr/local/lib
+48 info installOne service@0.1.4
+49 verbose installOne of service to /usr/local/lib not in flight; installing
+50 verbose lock using /Users/georgeruan/.npm/_locks/service-dfd60ea09f466bdc.lock for /usr/local/lib/node_modules/service
+51 silly install write writing service 0.1.4 to /usr/local/lib/node_modules/service
+52 verbose unbuild lib/node_modules/service
+53 silly gentlyRm /usr/local/lib/node_modules/service is being purged from base /usr/local
+54 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/service
+55 verbose tar unpack /Users/georgeruan/.npm/service/0.1.4/package.tgz
+56 verbose tar unpacking to /usr/local/lib/node_modules/service
+57 silly gentlyRm /usr/local/lib/node_modules/service is being purged
+58 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/service
+59 silly gunzTarPerm modes [ '755', '644' ]
+60 silly gunzTarPerm extractEntry
+61 silly gunzTarPerm extractEntry service.js
+62 silly gunzTarPerm extractEntry package.json
+63 silly gunzTarPerm extractEntry README.md
+64 verbose write writing to /usr/local/lib/node_modules/service/package.json
+65 info preinstall service@0.1.4
+66 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/service/package.json
+67 silly prepareForInstallMany adding daemon@>=0.3.0 from service dependencies
+68 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/service/package.json
+69 silly cache add args [ 'daemon@>=0.3.0', null ]
+70 verbose cache add spec daemon@>=0.3.0
+71 silly cache add parsed spec { raw: 'daemon@>=0.3.0',
+71 silly cache add   scope: null,
+71 silly cache add   name: 'daemon',
+71 silly cache add   rawSpec: '>=0.3.0',
+71 silly cache add   spec: '>=0.3.0',
+71 silly cache add   type: 'range' }
+72 silly addNamed daemon@>=0.3.0
+73 verbose addNamed ">=0.3.0" is a valid semver range for daemon
+74 silly addNameRange { name: 'daemon', range: '>=0.3.0', hasData: false }
+75 silly mapToRegistry name daemon
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npmjs.org/
+78 silly mapToRegistry uri https://registry.npmjs.org/daemon
+79 verbose addNameRange registry:https://registry.npmjs.org/daemon not in flight; fetching
+80 verbose request uri https://registry.npmjs.org/daemon
+81 verbose request no auth needed
+82 info attempt registry request try #1 at 11:02:00
+83 http request GET https://registry.npmjs.org/daemon
+84 http 200 https://registry.npmjs.org/daemon
+85 silly get cb [ 200,
+85 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+85 silly get     etag: '"22YS95HLKYC9XOOYNKQ9F8C0M"',
+85 silly get     'content-type': 'application/json',
+85 silly get     'cache-control': 'max-age=60',
+85 silly get     'content-length': '13891',
+85 silly get     'accept-ranges': 'bytes',
+85 silly get     date: 'Fri, 07 Aug 2015 15:02:00 GMT',
+85 silly get     via: '1.1 varnish',
+85 silly get     age: '0',
+85 silly get     connection: 'keep-alive',
+85 silly get     'x-served-by': 'cache-iad2140-IAD',
+85 silly get     'x-cache': 'HIT',
+85 silly get     'x-cache-hits': '1',
+85 silly get     'x-timer': 'S1438959719.811632,VS0,VE369',
+85 silly get     vary: 'Accept' } ]
+86 verbose get saving daemon to /Users/georgeruan/.npm/registry.npmjs.org/daemon/.cache.json
+87 silly addNameRange number 2 { name: 'daemon', range: '>=0.3.0', hasData: true }
+88 silly addNameRange versions [ 'daemon',
+88 silly addNameRange   [ '0.1.0',
+88 silly addNameRange     '0.3.0',
+88 silly addNameRange     '0.3.2',
+88 silly addNameRange     '0.4.0',
+88 silly addNameRange     '0.4.1',
+88 silly addNameRange     '0.5.0',
+88 silly addNameRange     '0.5.1',
+88 silly addNameRange     '1.0.0',
+88 silly addNameRange     '1.1.0' ] ]
+89 silly addNamed daemon@1.1.0
+90 verbose addNamed "1.1.0" is a plain semver version for daemon
+91 silly mapToRegistry name daemon
+92 silly mapToRegistry using default registry
+93 silly mapToRegistry registry https://registry.npmjs.org/
+94 silly mapToRegistry uri https://registry.npmjs.org/daemon
+95 verbose addRemoteTarball https://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz not in flight; adding
+96 verbose addRemoteTarball [ 'https://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz',
+96 verbose addRemoteTarball   '6c5102c81db0be856fc9008fc2c935b398864ae8' ]
+97 info retry fetch attempt 1 at 11:02:01
+98 info attempt registry request try #1 at 11:02:01
+99 http fetch GET https://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz
+100 http fetch 200 https://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz
+101 silly fetchAndShaCheck shasum 6c5102c81db0be856fc9008fc2c935b398864ae8
+102 verbose addTmpTarball /var/folders/0j/bz2h8sr51tx8v7w34dynz4s40000gn/T/npm-3890-2192594a/registry.npmjs.org/daemon/-/daemon-1.1.0.tgz not in flight; adding
+103 verbose addTmpTarball already have metadata; skipping unpack for daemon@1.1.0
+104 silly cache afterAdd daemon@1.1.0
+105 verbose afterAdd /Users/georgeruan/.npm/daemon/1.1.0/package/package.json not in flight; writing
+106 verbose afterAdd /Users/georgeruan/.npm/daemon/1.1.0/package/package.json written
+107 silly install resolved [ { name: 'daemon',
+107 silly install resolved     version: '1.1.0',
+107 silly install resolved     description: 'Add-on for creating *nix daemons',
+107 silly install resolved     author: { name: 'Roman Shtylman', email: 'shtylman@gmail.com' },
+107 silly install resolved     contributors:
+107 silly install resolved      [ [Object],
+107 silly install resolved        [Object],
+107 silly install resolved        [Object],
+107 silly install resolved        [Object],
+107 silly install resolved        [Object],
+107 silly install resolved        [Object],
+107 silly install resolved        [Object],
+107 silly install resolved        [Object] ],
+107 silly install resolved     repository:
+107 silly install resolved      { type: 'git',
+107 silly install resolved        url: 'http://github.com/indexzero/daemon.node.git' },
+107 silly install resolved     scripts: { test: 'mocha --ui qunit test/*.js' },
+107 silly install resolved     devDependencies: { mocha: '1.8.1', after: '0.6.0' },
+107 silly install resolved     main: './index.js',
+107 silly install resolved     engines: { node: '>= 0.8.0' },
+107 silly install resolved     _id: 'daemon@1.1.0',
+107 silly install resolved     dist:
+107 silly install resolved      { shasum: '6c5102c81db0be856fc9008fc2c935b398864ae8',
+107 silly install resolved        tarball: 'http://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz' },
+107 silly install resolved     _from: 'daemon@>=0.3.0',
+107 silly install resolved     _npmVersion: '1.2.14',
+107 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+107 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+107 silly install resolved     directories: {},
+107 silly install resolved     _shasum: '6c5102c81db0be856fc9008fc2c935b398864ae8',
+107 silly install resolved     _resolved: 'https://registry.npmjs.org/daemon/-/daemon-1.1.0.tgz' } ]
+108 info install daemon@1.1.0 into /usr/local/lib/node_modules/service
+109 info installOne daemon@1.1.0
+110 verbose installOne of daemon to /usr/local/lib/node_modules/service not in flight; installing
+111 verbose lock using /Users/georgeruan/.npm/_locks/daemon-c17ffa4e5884609b.lock for /usr/local/lib/node_modules/service/node_modules/daemon
+112 silly install write writing daemon 1.1.0 to /usr/local/lib/node_modules/service/node_modules/daemon
+113 verbose unbuild lib/node_modules/service/node_modules/daemon
+114 silly gentlyRm /usr/local/lib/node_modules/service/node_modules/daemon is being purged from base /usr/local
+115 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/service/node_modules/daemon
+116 verbose tar unpack /Users/georgeruan/.npm/daemon/1.1.0/package.tgz
+117 verbose tar unpacking to /usr/local/lib/node_modules/service/node_modules/daemon
+118 silly gentlyRm /usr/local/lib/node_modules/service/node_modules/daemon is being purged
+119 verbose gentlyRm don't care about contents; nuking /usr/local/lib/node_modules/service/node_modules/daemon
+120 silly gunzTarPerm modes [ '755', '644' ]
+121 silly gunzTarPerm extractEntry package.json
+122 silly gunzTarPerm extractEntry .npmignore
+123 silly gunzTarPerm extractEntry README.md
+124 silly gunzTarPerm extractEntry LICENSE
+125 silly gunzTarPerm extractEntry index.js
+126 silly gunzTarPerm extractEntry .travis.yml
+127 silly gunzTarPerm extractEntry examples/cluster.js
+128 silly gunzTarPerm extractEntry test/daemon-test.js
+129 silly gunzTarPerm extractEntry test/fixtures/nodaemon.js
+130 silly gunzTarPerm extractEntry test/fixtures/simple.js
+131 silly gunzTarPerm extractEntry test/fixtures/.gitkeep
+132 verbose write writing to /usr/local/lib/node_modules/service/node_modules/daemon/package.json
+133 info preinstall daemon@1.1.0
+134 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/service/node_modules/daemon/package.json
+135 verbose readDependencies loading dependencies from /usr/local/lib/node_modules/service/node_modules/daemon/package.json
+136 silly install resolved []
+137 verbose about to build /usr/local/lib/node_modules/service/node_modules/daemon
+138 info build /usr/local/lib/node_modules/service/node_modules/daemon
+139 info linkStuff daemon@1.1.0
+140 silly linkStuff daemon@1.1.0 has /usr/local/lib/node_modules/service/node_modules as its parent node_modules
+141 silly linkStuff daemon@1.1.0 is part of a global install
+142 silly linkStuff daemon@1.1.0 is installed into a global node_modules
+143 verbose linkBins daemon@1.1.0
+144 verbose linkMans daemon@1.1.0
+145 verbose rebuildBundles daemon@1.1.0
+146 info install daemon@1.1.0
+147 info postinstall daemon@1.1.0
+148 verbose unlock done using /Users/georgeruan/.npm/_locks/daemon-c17ffa4e5884609b.lock for /usr/local/lib/node_modules/service/node_modules/daemon
+149 verbose about to build /usr/local/lib/node_modules/service
+150 info build /usr/local/lib/node_modules/service
+151 info linkStuff service@0.1.4
+152 silly linkStuff service@0.1.4 has /usr/local/lib/node_modules as its parent node_modules
+153 silly linkStuff service@0.1.4 is part of a global install
+154 silly linkStuff service@0.1.4 is installed into a global node_modules
+155 silly linkStuff service@0.1.4 is installed into the top-level global node_modules
+156 verbose linkBins service@0.1.4
+157 verbose linkMans service@0.1.4
+158 verbose rebuildBundles service@0.1.4
+159 verbose rebuildBundles [ 'daemon' ]
+160 info install service@0.1.4
+161 info postinstall service@0.1.4
+162 verbose unlock done using /Users/georgeruan/.npm/_locks/service-dfd60ea09f466bdc.lock for /usr/local/lib/node_modules/service
+163 verbose validateInstall loading /usr/local/lib/package.json for validation
+164 verbose stack Error: The package generator-karma does not satisfy its siblings' peerDependencies requirements!
+164 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+164 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:267:7
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+164 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+164 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+164 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+164 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+165 verbose cwd /Users/georgeruan/Desktop/inspirationalQuotes
+166 error Darwin 14.4.0
+167 error argv "node" "/usr/local/bin/npm" "install" "service" "-g"
+168 error node v0.12.4
+169 error npm  v2.11.1
+170 error code EPEERINVALID
+171 error peerinvalid The package generator-karma does not satisfy its siblings' peerDependencies requirements!
+171 error peerinvalid Peer generator-angular@0.11.1 wants generator-karma@>=0.9.0
+171 error peerinvalid Peer generator-express-angular@0.2.9 wants generator-karma@~0.5.0
+172 verbose exit [ 1, true ]
