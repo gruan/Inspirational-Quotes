@@ -1,16 +1,12 @@
 var georgeInspirationalQuotes = angular.module('georgeInspirationalQuotes', []);
 
-function mainController($scope, $http) {
+georgeInspirationalQuotes.controller('mainController', ['$scope', '$http', '$interval', function($scope, $http, $interval) {
+
   $scope.formData = {};
   $scope.quotes = [];                 // Array of quotes objects
   $scope.quoteDisplay = {             // Actual quote string is in quoteDisplay.text
     text: ''
   };
-
-
-  // Get a random quote every timeDelay ms.
-  var timeDelay = 2000;
-  //$interval(getAnotherRandomQuote, timeDelay, 0);
 
   /**
    * Gets a random quote from the list of quotes in the quote array
@@ -61,4 +57,8 @@ function mainController($scope, $http) {
         console.log('Error: ' + data);
       });
   };
-}
+
+  // Get a random quote every timeDelay ms.
+  var timeDelay = 5000;
+  $interval($scope.getAnotherRandomQuote, timeDelay, 0);
+}])
